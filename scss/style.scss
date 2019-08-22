@@ -1053,7 +1053,7 @@ body {
 @media (max-width: 400px) {
     .home {
         .btn {
-            padding: 10px 50px;
+            padding: 10px 80px;
         }
     }
     .home__text__description {
@@ -1101,14 +1101,23 @@ body {
         }
     }
     .home__text__headline {
-        width: 250px;
-        font-size: 20px;
-        line-height: 35px;
+        width: 214px;
+        font-size: 23px;
+        line-height: 38px;
         span {
             letter-spacing: 0.25px;
 =======
             margin: 0 auto;
 >>>>>>> parent of 8e658bc... адаптировали блок home
+        }
+        .span {
+            display: none;
+        }
+        &:after {
+            content: "?";
+            font-size: 23px;
+            position: absolute;
+            margin-left: 5px;
         }
     }
 }
