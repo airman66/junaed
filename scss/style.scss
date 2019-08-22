@@ -1049,6 +1049,7 @@ body {
         height: 65px;
     }
 }
+<<<<<<< HEAD
 @media (max-width: 400px) {
     .home {
         .btn {
@@ -1062,6 +1063,8 @@ body {
         font-size: 13px;
     }
 }
+=======
+>>>>>>> parent of 8e658bc... адаптировали блок home
 
 @media (max-width: 380px) {
     .intro__content__text__description {
@@ -1089,6 +1092,7 @@ body {
         width: fit-content;
         a {
             width: fit-content;
+<<<<<<< HEAD
 
             a {
                 width: fit-content;
@@ -1102,6 +1106,9 @@ body {
         line-height: 38px;
         span {
             letter-spacing: 0.25px;
+=======
+            margin: 0 auto;
+>>>>>>> parent of 8e658bc... адаптировали блок home
         }
         .span {
             display: none;
