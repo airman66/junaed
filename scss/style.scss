@@ -740,7 +740,7 @@ body {
         background-color: #2d2d2d;
         position: absolute;
         top: 0;
-        width: 100vmax;
+        width: 31.9vw;
         height: 481px;
         z-index: -2;
     }
@@ -837,6 +837,23 @@ body {
     .intro {
         padding-bottom: 500px;
     }
+
+
+    .home {
+        .container {
+            padding-top: 108px;
+            padding-bottom: 107px;
+            display: block;
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    .home__text {
+        margin-bottom: 50px;
+    }
+
 }
 
 @media (max-width: 770px) {
@@ -864,6 +881,104 @@ body {
 
     .intro__content {
         margin-top: 50px;
+    }
+
+
+    .home__text__headline {
+        font-size: 35px;
+        margin-bottom: 10px;
+    }
+
+    .home__text__description {
+        font-size: 15px;
+        margin-bottom: 40px;
+    }
+
+    .home {
+        .container {
+            padding-top: 80px;
+            padding-bottom: 90px;
+        }
+    }
+
+    .home__info__cardsblock__card {
+        margin-right: 35px;
+    }
+}
+
+@media (max-width: 650px) {
+    .home__info__cardsblock__card__description {
+        font-size: 15px;
+    }
+
+    .home__text__description {
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 30px;
+    }
+
+    .home__info__cardsblock__card:last-child {
+        .home__info__cardsblock__card__description {
+            width: 251.14px;
+        }
+    }
+
+    .home {
+        .btn {
+            margin-right: auto;
+            margin-left: auto;
+            padding-top: 15px;
+            padding-bottom: 15px;
+
+            a {
+                width: fit-content;
+                margin: 0 auto;
+            }
+        }
+
+        .container {
+            padding-bottom: 70px;
+        }
+    }
+
+    .home__text {
+        margin-bottom: 30px;
+    }
+
+    .home__text__headline {
+        width: 415px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .home__info__cardsblock__card__name {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .home__info__cardsblock {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 585px) {
+    .home__info__cardsblock__card__description {
+        font-size: 13.5px;
+        width: 230px;
+    }
+
+    .home__info__cardsblock__card__name {
+        font-size: 20px;
+    }
+
+    .home__info__cardsblock__card__icon {
+        img {
+            width: 38px;
+        }
+    }
+
+    .home__text__description {
+        width: 415px;
     }
 }
 
@@ -896,6 +1011,49 @@ body {
     .intro__content {
         margin-top: 50px;
     }
+
+    .home__info__cardsblock {
+        display: block;
+        width: fit-content;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .home__info__cardsblock__card {
+        width: fit-content;
+        margin-bottom: 20px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .home {
+        .container {
+            padding-bottom: 50px;
+        }
+
+        .btn {
+            width: 100%;
+            max-width: 100%;
+            width: fit-content;
+            padding: 15px 35%;
+
+            a {
+                margin: 0 auto;
+            }
+        }
+    }
+
+    .home__text__headline {
+        font-size: 30px;
+        line-height: 45px;
+    }
+
+    .home__text__description {
+        width: 415px;
+        font-size: 14px;
+    }
 }
 
 @media (max-width: 495px) {
@@ -915,12 +1073,14 @@ body {
         margin-bottom: 40px;
     }
 
-    .btn {
-        margin-left: auto;
-        margin-right: auto;
-        padding: 15px 65px;
+    .intro {
+        .btn {
+            margin-left: auto;
+            margin-right: auto;
+            padding: 15px 65px;
 
 
+        }
     }
 
     .nav__link {
@@ -945,6 +1105,10 @@ body {
         margin-left: auto;
         margin-right: auto;
         font-size: 13.5px;
+    }
+
+    .home__text__headline {
+        text-align: center;
     }
 }
 
@@ -982,6 +1146,26 @@ body {
     .intro__content {
         margin-top: 25px;
     }
+
+    .home__text__description {
+        font-size: 13px;
+        width: 80%;
+    }
+
+    .home {
+        .btn {
+            padding: 15px 100px;
+        }
+
+        .container {
+            padding-top: 40px;
+        }
+    }
+
+    .home__text__headline {
+        font-size: 25px;
+        line-height: 40px;
+    }
 }
 
 @media (max-width: 415px) {
@@ -992,11 +1176,13 @@ body {
     .intro__content__text__headline {
         font-size: 30px;
     }
+
     .intro__content__text__description {
         width: 350px;
         font-size: 12.5px;
         line-height: 23px;
     }
+
     .intro__content__img {
         margin-top: 0px;
 
@@ -1004,17 +1190,38 @@ body {
             width: 300px;
         }
     }
-    .btn {
-        padding: 10px 60px;
+
+    .intro {
+        .btn {
+            padding: 10px 60px;
+        }
     }
+
     .intro {
         padding-bottom: 150px;
     }
+
     .intro__content__text {
         margin-bottom: -60px;
     }
+
     .header {
         height: 65px;
+    }
+
+    .home {
+        .btn {
+            padding: 15px 80px;
+        }
+    }
+
+    .home__text__description {
+        width: 70%;
+    }
+
+    .home__text__headline {
+        font-size: 23px;
+        line-height: 38px;
     }
 }
 
@@ -1027,11 +1234,13 @@ body {
     .intro__content__text__headline {
         font-size: 30px;
     }
+
     .intro__content__text__description {
         width: 350px;
         font-size: 12.5px;
         line-height: 23px;
     }
+
     .intro__content__img {
         margin-top: 0px;
 
@@ -1039,64 +1248,68 @@ body {
             width: 300px;
         }
     }
-    .btn {
-        padding: 10px 60px;
+
+    .intro {
+        .btn {
+            padding: 10px 60px;
+        }
     }
+
     .intro {
         padding-bottom: 150px;
     }
+
     .header {
         height: 65px;
     }
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 @media (max-width: 400px) {
     .home {
         .btn {
-            padding: 10px 50px;
+            padding: 10px 80px;
         }
     }
+
     .home__text__description {
         width: 250px;
     }
+
     .home__info__cardsblock__card__description {
         font-size: 13px;
     }
 }
-=======
->>>>>>> parent of 8e658bc... адаптировали блок home
-=======
->>>>>>> parent of 8e658bc... адаптировали блок home
 
 @media (max-width: 380px) {
     .intro__content__text__description {
         width: 325px;
         font-size: 11.5px;
     }
+
     .intro__content__text__headline {
         font-size: 25px;
         line-height: 32px;
         margin-bottom: 15px;
     }
+
     .intro__content__img {
         img {
             width: 250px;
         }
     }
+
     .intro {
         padding-bottom: 60px;
     }
+
     .intro__content__text {
         margin-bottom: -105px;
     }
-    .btn {
-        padding: 7px 50px;
-        width: fit-content;
-        a {
+
+    .intro {
+        .btn {
+            padding: 7px 50px;
             width: fit-content;
-<<<<<<< HEAD
-<<<<<<< HEAD
 
             a {
                 width: fit-content;
@@ -1104,31 +1317,31 @@ body {
             }
         }
     }
+
     .home__text__headline {
-        width: 250px;
-        font-size: 20px;
-        line-height: 35px;
+        width: 214px;
+        font-size: 23px;
+        line-height: 38px;
+
         span {
             letter-spacing: 0.25px;
-=======
-            margin: 0 auto;
->>>>>>> parent of 8e658bc... адаптировали блок home
         }
-<<<<<<< HEAD
+
         .span {
             display: none;
         }
+
         &:after {
             content: "?";
             font-size: 23px;
             position: absolute;
             margin-left: 5px;
-=======
-            margin: 0 auto;
->>>>>>> parent of 8e658bc... адаптировали блок home
         }
-=======
->>>>>>> parent of 0b0153f... исправили адаптив второго блока
+    }
+
+    .home__text__description {
+        width: 225px;
+        font-size: 12.5px;
     }
 }
 
@@ -1137,10 +1350,20 @@ body {
         width: 275px;
         font-size: 10.5px;
     }
+
     .intro__content__text {
         margin-bottom: -80px;
     }
+
     .intro {
         padding-bottom: 85px;
+    }
+}
+
+@media (max-width: 319px) {
+    .home {
+        .btn {
+            padding: 10px 60px;
+        }
     }
 }
