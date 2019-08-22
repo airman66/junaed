@@ -1054,7 +1054,7 @@ body {
 @media (max-width: 400px) {
     .home {
         .btn {
-            padding: 10px 80px;
+            padding: 10px 50px;
         }
     }
     .home__text__description {
@@ -1105,15 +1105,16 @@ body {
         }
     }
     .home__text__headline {
-        width: 214px;
-        font-size: 23px;
-        line-height: 38px;
+        width: 250px;
+        font-size: 20px;
+        line-height: 35px;
         span {
             letter-spacing: 0.25px;
 =======
             margin: 0 auto;
 >>>>>>> parent of 8e658bc... адаптировали блок home
         }
+<<<<<<< HEAD
         .span {
             display: none;
         }
@@ -1126,6 +1127,8 @@ body {
             margin: 0 auto;
 >>>>>>> parent of 8e658bc... адаптировали блок home
         }
+=======
+>>>>>>> parent of 0b0153f... исправили адаптив второго блока
     }
 }
 
