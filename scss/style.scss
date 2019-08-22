@@ -1322,6 +1322,7 @@ body {
         width: 214px;
         font-size: 23px;
         line-height: 38px;
+        position: relative;
 
         span {
             letter-spacing: 0.25px;
@@ -1335,7 +1336,7 @@ body {
             content: "?";
             font-size: 23px;
             position: absolute;
-            margin-left: 5px;
+            left: 100%;
         }
     }
 
