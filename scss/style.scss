@@ -274,13 +274,10 @@ body {
     &:last-child {
         margin-right: 0;
     }
-
-    &:first-child {
-        a {
-            color: #ff2d2d;
-            opacity: 1;
-        }
-    }
+}
+#firstWorksMenuItem {
+    color: #ff2d2d;
+    opacity: 1;
 }
 
 .section__text__line {
