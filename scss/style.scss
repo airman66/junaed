@@ -367,10 +367,18 @@ body {
     }
 }
 
-.section__content {
+.section__content--modify {
     display: flex;
     justify-content: space-between;
     margin-bottom: 110px;
+}
+
+.section__content__info__otherEmployees__itemBlock {
+    display: flex;
+
+    &:first-child {
+        margin-right: 21px;
+    }
 }
 
 .section__content__info__employeeInfo__name {
@@ -443,7 +451,6 @@ body {
         margin-right: 21px;
     }
 }
-
 .section__content__info__otherEmployees__item {
     margin-right: 20px;
     height: 214px;
@@ -457,7 +464,7 @@ body {
         content: "sokina jue";
         position: absolute;
         bottom: 0;
-        padding: 10px 44px 10px 50px;
+        padding: 4.67% 22.33% 4.67% 25.38%;
         color: #ffffff;
         font-family: "Open Sans - Semibold";
         font-size: 18px;
@@ -472,7 +479,6 @@ body {
         animation: anime .2s linear;
         opacity: 1;
     }
-
 }
 
 
@@ -834,6 +840,19 @@ body {
         margin-bottom: 14px;
     }
 }
+@media (max-width: 1240px) {
+
+    .section__content__info__otherEmployees__item {
+        height: 195.53px;
+        &:after {
+            font-size: 16px;
+        }
+
+        img {
+            width: 180px;
+        }
+    }
+}
 
 @media (max-width: 1199px) {
     .intro__content {
@@ -906,7 +925,23 @@ body {
     .section__content__works__menu {
         width: fit-content;
     }
+    .section--modify {
+        .container {
+            width: fit-content;
+            margin-right: auto;
+            margin-left: auto;
+        }
+    }
+    .section__content--modify {
+        display: block;
+        width: fit-content;
+        margin-right: auto;
+        margin-left: auto;
+    }
 
+    .section__content__info__otherEmployees {
+        justify-content: left;
+    }
 }
 
 @media (max-width: 940px) {
@@ -938,6 +973,23 @@ body {
     .section__content__works__content {
         margin-bottom: 80px;
         margin-top: 80px;
+    }
+    .section__content__info__employeeInfo__description {
+        width: 550px;
+    }
+    .section__content__info__otherEmployees__item {
+        height: 162.94px;
+        &:after {
+            font-size: 13px;
+            width: 150px;
+        }
+
+        img {
+            width: 150px;
+        }
+    }
+    .section__content--modify {
+        margin-bottom: 80px;
     }
 }
 
@@ -1005,8 +1057,59 @@ body {
         margin-top: 50px;
         margin-bottom: 70px;
     }
-}
+    .section__content__info__otherEmployees {
+        display: block;
+    }
+    .section__content__info__otherEmployees__itemBlock {
 
+        &:first-child {
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
+    }
+    .section__content__info__otherEmployees__item {
+        height: 195.53px;
+        &:after {
+            font-size: 16px;
+            width: 180px;
+        }
+
+        img {
+            width: 180px;
+        }
+    }
+    .section__content__info__otherEmployees {
+        width: fit-content;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .section__content__info__employeeInfo {
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .section__content__info__employeeInfo__description {
+        margin-left: auto;
+        margin-right: auto;
+        width: 490px;
+    }
+    .section__content__info__employeeInfo__name {
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 25px;
+    }
+    .section__content__info__employeeInfo__society {
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .section__content__employee {
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
 @media (max-width: 720px) {
     .section__content__works__menu__nav__link {
         a {
@@ -1091,6 +1194,25 @@ body {
     .section__content__works__content__lineOfWorks__worksblock__item {
         img {
             width: 250px;
+        }
+    }
+    .section--modify {
+        .section__text__headline {
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 20px;
+        }
+        .section__text__line {
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 50px;
+        }
+        .section__text__description {
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            width: 450px;
         }
     }
 }
