@@ -1415,6 +1415,12 @@ body {
     .section__content__info__employeeInfo__name {
         font-size: 28px;
     }
+    .section--modify {
+        .section__text__description {
+            width: 400px;
+            font-size: 15px;
+        }
+    }
 }
 
 @media (max-width: 440px) {
@@ -1479,6 +1485,58 @@ body {
     .section__text__headline--modify {
         font-size: 28px;
         line-height: 28px;
+    }
+    .section__content__info__otherEmployees__item {
+        height: 214px;
+        width: fit-content;
+        margin-right: 0;
+        margin-bottom: 20px;
+
+        &:after {
+            width: 197px;
+        }
+        img {
+            width: 197px;
+        }
+        :last-child {
+            margin-bottom: 0;
+        }
+    }
+    .section__content__info__otherEmployees__itemBlock {
+        display: block;
+    }
+    .section__content__info__employeeInfo__description {
+        width: 325px;
+        font-size: 14.5px;
+    }
+    .section__content__info__employeeInfo__society {
+        a {
+            font-size: 17px;
+        }
+    }
+    .section__content__info__employeeInfo__society__item {
+        margin-right: 25px;
+        &:first-child {
+            margin-right: 25px;
+        }
+        &:last-child {
+            margin-left: 30px;
+        }
+    }
+    .section__content__info__otherEmployees {
+        padding-top: 45px;
+    }
+    .section__content__employee {
+        height: 428.03px;
+        img {
+            width: 300px;
+        }
+    }
+    .section--modify {
+        .section__text__description {
+            font-size: 14px;
+            width: 375px;
+        }
     }
 }
 
@@ -1576,6 +1634,16 @@ body {
     .header {
         height: 65px;
     }
+    .section--modify {
+        .section__text__headline {
+            font-size: 35px;
+            line-height: 38px;
+        }
+        .section__text__description {
+            width: 325px;
+            font-size: 13.5px;
+        }
+    }
 }
 
 @media (max-width: 400px) {
@@ -1665,6 +1733,38 @@ body {
             width: 280px;
         }
     }
+    .section__content__employee {
+        height: 392.36px;
+        img {
+            width: 275px;
+        }
+    }
+    .section__content__info__employeeInfo__description {
+        width: 275px;
+        font-size: 14px;
+    }
+    .section__content__info__employeeInfo__society__item {
+        margin-right: 20px;
+
+        &:first-child {
+            margin-right: 20px;
+        }
+        &:last-child {
+            margin-left: 20px;
+        }
+        a {
+            font-size: 15.5px;
+        }
+    }
+    .section--modify {
+        .section__text__description {
+            width: 275px;
+        }
+        .section__text__headline {
+            font-size: 31px;
+            line-height: 34px;
+        }
+    }
 }
 
 @media (max-width: 350px) {
@@ -1688,6 +1788,17 @@ body {
 
     .section__text__description--modify {
         width: 275px;
+    }
+    .section__content__employee {
+        height: 356.69px;
+        img {
+            width: 250px;
+        }
+    }
+    .section__content__info__employeeInfo__society__item {
+        a {
+            font-size: 15px;
+        }
     }
 }
 
