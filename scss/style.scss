@@ -1340,6 +1340,9 @@ body {
         font-size: 30px;
         line-height: 30px;
     }
+    .section__content__info__employeeInfo__description {
+        width: 450px;
+    }
 }
 
 @media (max-width: 495px) {
@@ -1399,6 +1402,18 @@ body {
 
     .section__text__description--modify {
         width: 400px;
+    }
+    .section__content__info__employeeInfo__society {
+        a {
+            font-size: 17.5px;
+        }
+    }
+    .section__content__info__employeeInfo__description {
+        font-size: 15px;
+        width: 375px;
+    }
+    .section__content__info__employeeInfo__name {
+        font-size: 28px;
     }
 }
 
