@@ -1504,6 +1504,10 @@ body {
     }
     .section__content__info__otherEmployees__itemBlock {
         display: block;
+
+        &:first-child {
+            padding-top: 20px;
+        }
     }
     .section__content__info__employeeInfo__description {
         width: 325px;
@@ -1524,7 +1528,19 @@ body {
         }
     }
     .section__content__info__otherEmployees {
-        padding-top: 45px;
+        padding-top: 35px;
+        position: relative;
+
+        &:before {
+            content: "Other employees:";
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.28px;
+            opacity: 0.9;
+            color: #000000;
+            font-family: "Open Sans - Semibold";
+            font-size: 20px;
+        }
     }
     .section__content__employee {
         height: 428.03px;
