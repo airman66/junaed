@@ -827,6 +827,12 @@ body {
     margin-right: 17px;
 }
 
+@media (max-width: 1295px) {
+    .intro {
+        padding-top: 0;
+    }
+}
+
 @media (max-width: 1286px) {
     .section__content__works__content__lineOfWorks__worksblock__item {
         height: fit-content;
