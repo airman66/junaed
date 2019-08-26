@@ -1506,7 +1506,7 @@ body {
         display: block;
 
         &:first-child {
-            padding-top: 20px;
+            padding-top: 45px;
         }
     }
     .section__content__info__employeeInfo__description {
@@ -1528,7 +1528,8 @@ body {
         }
     }
     .section__content__info__otherEmployees {
-        padding-top: 35px;
+        padding-top: 0;
+        margin-top: 45px;
         position: relative;
 
         &:before {
@@ -1540,6 +1541,9 @@ body {
             color: #000000;
             font-family: "Open Sans - Semibold";
             font-size: 20px;
+            position: absolute;
+            top: 0;
+            left: 0;
         }
     }
     .section__content__employee {
