@@ -7,4 +7,24 @@ $(document).ready(function () {
             $(".contact__form__message__placeholder").css("display", "block");
         }
     });
+    $("#burgerTriger").click(function () {
+        $(".firstBurgerIcon").css("display", "none");
+        $(".firstBurgerIcon").removeAttr("id");
+        $(".secondBurgerIcon").css("display", "block");
+        $(".secondBurgerIcon").attr("id", "burgerTriger");
+        $(".mobile__menu").css("animation", "burger linear .1s");
+        $(".mobile__menu").css("left", "0");
+        $(".secondBurgerIcon").css("position", "fixed");
+        $(".secondBurgerIcon").css("margin-right", "20px");
+        $(".secondBurgerIcon").css("right", "0");
+        $(".secondBurgerIcon").css("z-index", "10001");
+    });
+    $(".secondBurgerIcon").click(function () {
+        $(".secondBurgerIcon").css("display", "none");
+        $(".secondBuregerIcon").removeAttr("id");
+        $(".firstBurgerIcon").css("display", "block");
+        $(".firstBurgerIcon").attr("id", "burgerTriger");
+        $(".mobile__menu").css("animation", "burger-reverse linear .1s");
+        $(".mobile__menu").css("left", "-100%");
+    });
 });
