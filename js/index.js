@@ -27,4 +27,38 @@ $(document).ready(function () {
         $(".mobile__menu").css("animation", "burger-reverse linear .1s");
         $(".mobile__menu").css("left", "-100%");
     });
+
+    $(".mobile__link").click(function (e) { 
+        e.preventDefault();
+        let target = $(this).attr("href");
+        let top = $(target).offset().top;
+        if (target=="#works") {
+            top+=20;
+        }
+        if (target=="#about") {
+            top-=50;
+        }
+        $("html,body").animate( { scrollTop: top }, 1000 );
+        $(".secondBurgerIcon").css("display", "none");
+        $(".secondBuregerIcon").removeAttr("id");
+        $(".firstBurgerIcon").css("display", "block");
+        $(".firstBurgerIcon").attr("id", "burgerTriger");
+        $(".mobile__menu").css("animation", "burger-reverse linear .1s");
+        $(".mobile__menu").css("left", "-100%");
+        return false;
+    });
+
+    $(".nav__link").click(function (e) { 
+        e.preventDefault();
+        let target = $(this).attr("href");
+        let top = $(target).offset().top;
+        if (target=="#works") {
+            top+=20;
+        }
+        if (target=="#about") {
+            top-=100;
+        }
+        $("html,body").animate( { scrollTop: top }, 1000 );
+        return false;
+    });
 });
