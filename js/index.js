@@ -30,6 +30,7 @@ $(document).ready(function () {
 
     $(".mobile__link").click(function (e) { 
         e.preventDefault();
+        $(".mobile__link").css(propertyName, value);
         let target = $(this).attr("href");
         let top = $(target).offset().top;
         if (target=="#works") {
@@ -60,5 +61,21 @@ $(document).ready(function () {
         }
         $("html,body").animate( { scrollTop: top }, 1000 );
         return false;
+    });
+
+    $(".upBtn").click(function () { 
+        $(".upBtn").css("background-color", "rgb(0, 255, 0)");
+        let top = $(window).scrollTop();
+        $("html,body").animate( { scrollTop: -top }, 1000 );
+    });
+
+    $(window).scroll(function () { 
+        if ($(this).scrollTop() >= 1) {
+            $(".upBtn").css("display", "block");
+        }
+        if ($(this).scrollTop() == 0) {
+            $(".upBtn").css("display", "none");
+            $(".upBtn").css("background-color", "rgb(17, 173, 17)");
+        }
     });
 });
