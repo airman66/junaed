@@ -1,3 +1,4 @@
+
 $(document).ready(function () {
     $(".contact__form__message__text").focus(function () {
         $(".contact__form__message__placeholder").css("display", "none");
@@ -61,20 +62,4 @@ $(document).ready(function () {
         $("html,body").animate( { scrollTop: top }, 1000 );
         return false;
     });
-
-    // $(".upBtn").click(function () { 
-    //     $(".upBtn").css("background-color", "rgb(0, 255, 0)");
-    //     let top = $(window).scrollTop();
-    //     $("html,body").animate( { scrollTop: -top }, 1000 );
-    // });
-
-    // $(window).scroll(function () { 
-    //     if ($(this).scrollTop() >= 1) {
-    //         $(".upBtn").css("display", "block");
-    //     }
-    //     if ($(this).scrollTop() == 0) {
-    //         $(".upBtn").css("display", "none");
-    //         $(".upBtn").css("background-color", "rgb(17, 173, 17)");
-    //     }
-    // });
 });
