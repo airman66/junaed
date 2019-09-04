@@ -30,7 +30,6 @@ $(document).ready(function () {
 
     $(".mobile__link").click(function (e) { 
         e.preventDefault();
-        $(".mobile__link").css(propertyName, value);
         let target = $(this).attr("href");
         let top = $(target).offset().top;
         if (target=="#works") {
