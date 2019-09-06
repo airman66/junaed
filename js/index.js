@@ -62,4 +62,18 @@ $(document).ready(function () {
         $("html,body").animate( { scrollTop: top }, 1000 );
         return false;
     });
+
+    $(".toTopBtn").click(function () { 
+        $("html, body").animate({ scrollTop: 0 }, 1000);
+          return false;
+    });
+
+    $(window).scroll(function () {
+        if ($(window).scrollTop() > $("#home").height()) {
+            $(".toTopBtn").fadeIn();
+        }
+        else {
+            $(".toTopBtn").fadeOut();
+        }
+    });
 });
