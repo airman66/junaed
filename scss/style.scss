@@ -96,6 +96,11 @@ body {
     margin: 0 auto;
     padding-right: 15px;
     padding-left: 15px;
+    z-index: 9000;
+}
+
+.secondBurgerIcon {
+    z-index: 11000;
 }
 
 .mobile__menu {
@@ -111,6 +116,7 @@ body {
     position: fixed;
     z-index: 10000;
     left: -99999px;
+    top: 0;
 
     li {
         list-style: none;

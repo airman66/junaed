@@ -39,7 +39,12 @@ $(document).ready(function () {
         if (target=="#about") {
             top-=50;
         }
-        $("html,body").animate( { scrollTop: top }, 1000 );
+        if (target=="#home") {
+            $("html, body").animate({ scrollTop: 0 }, 1000);
+        }
+        else {
+            $("html,body").animate( { scrollTop: top }, 1000 );
+        }
         $(".secondBurgerIcon").css("display", "none");
         $(".secondBuregerIcon").removeAttr("id");
         $(".firstBurgerIcon").css("display", "block");
@@ -59,7 +64,12 @@ $(document).ready(function () {
         if (target=="#about") {
             top-=100;
         }
-        $("html,body").animate( { scrollTop: top }, 1000 );
+        if (target=="#home") {
+            $("html, body").animate({ scrollTop: 0 }, 1000);
+        }
+        else {
+            $("html,body").animate( { scrollTop: top }, 1000 );
+        }
         return false;
     });
 
@@ -74,6 +84,17 @@ $(document).ready(function () {
         }
         else {
             $(".toTopBtn").fadeOut();
+        }
+    });
+    $(window).scroll(function () {
+        if ($(window).scrollTop() > $("#home").height()) {
+            $(".header").css("position", "fixed");
+            $(".header").css("max-width", "100%");
+            $(".header").css("top", "0");
+        }
+        else {
+            $(".header").css("position", "static");
+            $(".header").css("max-width", "1279px");
         }
     });
 });
