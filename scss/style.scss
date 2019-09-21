@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    opacity: 0;
+}
+
 @keyframes burger {
     from {
         left: -100%;

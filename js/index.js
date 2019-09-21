@@ -1,5 +1,15 @@
-
 $(document).ready(function () {
+    if ($(window).scrollTop() > $("#home").height()) {
+        $(".header").css("position", "fixed");
+        $(".header").css("max-width", "100%");
+        $(".header").css("top", "0");
+    }
+    else {
+        $(".header").css("position", "static");
+        $(".header").css("max-width", "1279px");
+    }
+    $("body").css("animation", "body linear 1s");
+    $("body").css("opacity", "1");
     $(".contact__form__message__text").focus(function () {
         $(".contact__form__message__placeholder").css("display", "none");
     });
