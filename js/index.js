@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    if ($(window).scrollTop() > $("#home").height()) {
+    if ($(window).scrollTop() > $("#home").innerHeight()) {
         $(".header").css("position", "fixed");
         $(".header").css("max-width", "100%");
         $(".header").css("top", "0");
@@ -7,6 +7,12 @@ $(document).ready(function () {
     else {
         $(".header").css("position", "static");
         $(".header").css("max-width", "1279px");
+    }
+    if ($(window).scrollTop() > $("#home").innerHeight()) {
+        $(".toTopBtn").fadeIn();
+    }
+    else {
+        $(".toTopBtn").fadeOut();
     }
     $("body").css("animation", "body linear 1s");
     $("body").css("opacity", "1");
@@ -89,7 +95,7 @@ $(document).ready(function () {
     });
 
     $(window).scroll(function () {
-        if ($(window).scrollTop() > $("#home").height()) {
+        if ($(window).scrollTop() > $("#home").innerHeight()) {
             $(".toTopBtn").fadeIn();
         }
         else {
@@ -97,7 +103,7 @@ $(document).ready(function () {
         }
     });
     $(window).scroll(function () {
-        if ($(window).scrollTop() > $("#home").height()) {
+        if ($(window).scrollTop() > $("#home").innerHeight()) {
             $(".header").css("position", "fixed");
             $(".header").css("max-width", "100%");
             $(".header").css("top", "0");
