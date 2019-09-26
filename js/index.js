@@ -14,8 +14,6 @@ $(document).ready(function () {
     else {
         $(".toTopBtn").fadeOut();
     }
-    $("body").css("animation", "body linear 1s");
-    $("body").css("opacity", "1");
     $(".contact__form__message__text").focus(function () {
         $(".contact__form__message__placeholder").css("display", "none");
     });
